@@ -55,7 +55,7 @@ export default function Home() {
           </FlexBox>
           {contactDetails?.map((item: any, index: any) => {
             return (
-              <StyledBox>
+              <StyledBox key={index}>
                 <FlexBox
                   style={{
                     alignItems: "center",
