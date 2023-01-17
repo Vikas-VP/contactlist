@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Box } from "./StyledComponents";
 
 const Conatiner = styled.div`
-  width: 25%;
+  width: 100%;
   box-shadow: 0px 3px 10px grey;
   border: 1px solid black;
   border-radius: 5px;
@@ -135,7 +135,12 @@ const AddContactComp = (props: any) => {
         <StyledFlexBox>
           <h3>Add Contact</h3>{" "}
           <Box>
-            <Button color="primary" variant="contained" onClick={addContact}>
+            <Button
+              color="primary"
+              variant="contained"
+              onClick={addContact}
+              disabled={contactInfo?.name == "" || contactInfo?.phone == ""}
+            >
               Add
             </Button>
           </Box>

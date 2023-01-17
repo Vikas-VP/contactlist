@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <FlexColumn
       style={{
-        width: "30%",
+        width: "100%",
         justifyContent: "center",
         alignItems: "center",
         margin: "auto",
@@ -45,14 +45,8 @@ export default function Home() {
     >
       {contactDetails?.length > 0 ? (
         <Box style={{ width: "100%" }}>
-          <FlexBox
-            style={{
-              alignItems: "center",
-              marginTop: "10px",
-            }}
-          >
-            <h3>Contact Details</h3>
-          </FlexBox>
+          <h3 style={{ textAlign: "center" }}>Contact Details</h3>
+
           {contactDetails?.map((item: any, index: any) => {
             return (
               <StyledBox key={index}>
@@ -89,7 +83,7 @@ export default function Home() {
           })}
         </Box>
       ) : (
-        <h3>No contacts to display</h3>
+        <h3 style={{ textAlign: "center" }}>No contacts to display</h3>
       )}
       <Box style={{ justifyContent: "center" }}>
         <Button color="primary" variant="contained" onClick={handleClick}>

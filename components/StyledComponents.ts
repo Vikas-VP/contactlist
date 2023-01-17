@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Conatiner = styled.div`
-  width: 40%;
+  width: 100%;
   box-shadow: 0px 5px 10px black;
   border: 1px solid black;
   padding: 5px;
